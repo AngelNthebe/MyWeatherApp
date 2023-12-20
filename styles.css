@@ -1,0 +1,147 @@
+:root{
+    --blue:#43aefc;
+    ---white:#ffffff;
+    --light-grey:#dedede;
+    --black:#010101;
+
+}
+body{
+    margin: 0;
+
+}
+.flex{
+    display: flex;
+}
+.c-center{
+    justify-content: center;
+    align-items: center;
+}
+.item-c{
+ align-items: center;
+}
+.margin-t20{
+    margin-top: 20px;
+}
+.coloum-c{
+    flex-direction: column; 
+}
+.main-container{
+    
+    
+    background-color: var(--blue);
+    margin: 0;
+    height: 100vh;
+}
+.weather-container{
+   width: 400px;
+    height: 420px;
+    background-color: var(---white);
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.nav-app ,.footer-app{
+  
+    width: 100%;
+    height: 60px;
+    margin: 0;
+}
+.body-app{
+    width: 100%;
+    height: calc(100% - 120px);
+    flex-direction: column;
+   
+}
+.feel ,.humit{
+
+    width: 50%;
+    height: 100%;
+}
+.footer-app{
+    border-top: 1px solid var(--light-grey);
+  
+}
+.feel {
+    border-right: 1px solid var(--light-grey);
+}
+.nav-app ,.hearder{
+    border-bottom: 1px solid var(--light-grey);
+    color: var(--blue);
+    font-family: sans-serif;
+}
+h1{
+    margin: 9px 10px;
+    font-weight: lighter;
+}
+.weather-ico{
+    background-color: #010101;
+    width: 80%;
+    height: 100px;
+}
+.temp-text{
+    background-color: aqua;
+    width: 80%;
+    height: 80px;
+}
+.description{
+    background-color: red;
+    width: 80%;
+    height: 50px;
+}
+.location{
+ background-color: #43aefc;
+ width: 80%;
+ height: 50px;
+}
+.location-selector{
+
+background-color: #b3e5fcb0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.hearder{
+    height: 50px;
+    width: 100%;
+}
+.sector{
+    width: 45%;
+    max-width: 400px;
+    height: 250px;
+    background-color: var(---white);
+    border-radius: 20px;
+}
+hr{
+    width: 128px;
+    margin: 0 20px;
+}
+input{
+    padding: 10px 20px;
+    font-size: x-large;
+    border-radius: 6px;
+    border: 1px solid var(--light-grey);
+    color:var(--light-grey);
+    box-sizing: border-box;
+}
+button{ 
+    padding: 14px 55px;
+    background-color: var(--blue);
+    color: var(---white);
+    font-size: x-large;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 6px;
+}
+.close{    POSITION: absolute;
+    TOP: 122PX;
+    RIGHT: 150PX;
+    FONT-SIZE: larger;
+    FONT-FAMILY: fantasy;
+    cursor: pointer;
+}
+.close:hover{
+    font-size:xx-large ;
+}
+
