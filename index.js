@@ -1,11 +1,23 @@
-const close =document.getElementsByClassName("location-selector")
 
+//closing the popup
 function closebtn(){
-
-    close.style.display = "none" ;
+   
+    let closepopup = document.getElementById("pop");
+    closepopup.style.display = "none";
+    console.log(close);
    
 }
-//     event.preventDefault();
-//     close.style.display = "none"
-//     console.log(event);
-// });
+let _location = document.getElementById("location")
+//get device location
+function  getlocation(){
+if (navigator.geolocation){
+    navigator.geolocation.getCurrentPosition(showPosition());
+}else{
+    _location.innerhtml ="location not found"
+
+}
+}
+function showPosition(position){
+    _location.innerhtml = position.coords.latitude +"<br>"+ position.coords.longitude 
+
+}

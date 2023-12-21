@@ -18,7 +18,9 @@
                 <div class="weather-ico"></div>
                 <div class="temp-text"></div>
                 <div class="description"></div>
-                <div class="location"></div>
+                <div  class="location">
+                    <p id="location" ></p>
+                </div>
             </div>
             <div class="footer-app flex">
                 <div class="feel"></div>
@@ -28,23 +30,23 @@
 
 
     </div>
-    <div class="location-selector flex c-center">
+    <div class="location-selector flex c-center" id="pop">
 
-    <P class="close"  onclick="closebtn">X</P>
+        <div class="close" onclick="closebtn()">X</div>
         <div class="sector">
             <div class="hearder">
                 <h1>weather app</h1>
             </div>
-           <div class="flex margin-t20 item-c  coloum-c ">
-            <input type="text" placeholder="Enter city name">
-            
-            <div class="line item-c flex">
-                <hr>
-                <p>OR</p>
-                <hr>
+            <div class="flex margin-t20 item-c  coloum-c ">
+                <input type="text" placeholder="Enter city name">
+
+                <div class="line item-c flex">
+                    <hr>
+                    <p>OR</p>
+                    <hr>
+                </div>
+                <button onclick="getlocation()">Get Divce Location</button>
             </div>
-            <button>Get Divce Location</button>
-           </div>
 
         </div>
     </div>
