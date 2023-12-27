@@ -74,22 +74,22 @@ h1{
     font-weight: lighter;
 }
 .weather-ico{
-    background-color: blue;
+   
     width: 80%;
     height: 100px;
 }
 .temp-text{
-    background-color: aqua;
+  
     width: 80%;
     height: 80px;
 }
 .description{
-    background-color: red;
+   
     width: 80%;
     height: 50px;
 }
 .location{
- background-color: #43aefc;
+
  width: 80%;
  height: 50px;
 }
@@ -118,33 +118,21 @@ hr{
     margin: 0 20px;
 }
 input{
-    padding: 10px 20px;
-    font-size: x-large;
+    padding: 4px 4px;
+   
     border-radius: 6px;
     border: 1px solid var(--light-grey);
     color:var(--light-grey);
     box-sizing: border-box;
 }
 button{ 
-    padding: 14px 55px;
+    padding: 4px 5px;
     background-color: var(--blue);
     color: var(---white);
-    font-size: x-large;
+    
     box-sizing: border-box;
     border: none;
     border-radius: 6px;
 }
-.close{    POSITION: absolute;
-    TOP: 122PX;
-    RIGHT: 150PX;
-    FONT-SIZE: larger;
-    FONT-FAMILY: fantasy;
-    cursor: pointer;
-}
-.close:hover{
-    font-size:xx-large ;
-}
-.closepopup{
-    display: none;
-}
+
 
