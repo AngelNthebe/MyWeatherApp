@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather wab</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -16,8 +17,13 @@
             </div>
             <div class="body-app flex c-center">
                 <div class="location">
-                    <input id="city" type="text" placeholder="enter city ">
-                    <button onclick="weather()">check weather</button>
+                    <input id="city" type="text" placeholder="enter city " >
+                    <button onclick="weather()"><span class="material-symbols-outlined">
+                        search
+                        </span></button>
+                        <button><span class="material-symbols-outlined">
+                            my_location
+                            </span></button>
                 </div>
                 <div class="weather-ico">
                 <img id="icon"  alt=" weather icon">
