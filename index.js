@@ -9,7 +9,7 @@ function  weather(){
             const temperature = data.main.temp;
             const description = data.weather[0].description;
             document.getElementById('icon').src = `http://openweathermap.org/img/w/${icon}.png`;
-            document.getElementById('temperature').textContent = `Temperature: ${temperature} K`;
+            document.getElementById('temperature').textContent = `Temperature: ${temperature} `;
             document.getElementById('description').textContent = `Description: ${description}`;
           })
           .catch(error => console.error('Error fetching weather data:', error));
