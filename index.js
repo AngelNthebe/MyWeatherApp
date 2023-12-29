@@ -13,7 +13,7 @@ function  weather(){
            
             document.getElementById('temperature').textContent = `Temperature: ${temperature - 273.15} °C `;
             
-            document.getElementById('description').textContent = `Description: ${description}`;
+            document.getElementById('description').textContent = `Description: ${description.tofix(2)}`;
           })
           .catch(error => console.error('Error fetching weather data:', error));
       }
