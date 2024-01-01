@@ -17,4 +17,6 @@ function  weather(){
           })
           .catch(error => console.error('Error fetching weather data:', error));
       }
-    
+    function currentlocationweather(){
+        
+    }

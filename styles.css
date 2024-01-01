@@ -82,11 +82,17 @@ h1{
   
     width: 80%;
     height: 80px;
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: 500;
 }
 .description{
    
     width: 80%;
     height: 50px;
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: 500;
 }
 .location{
 
