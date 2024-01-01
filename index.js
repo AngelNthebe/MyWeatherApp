@@ -11,7 +11,7 @@ function  weather(){
             const description = data.weather[0].description;
             document.getElementById('icon').src = `http://openweathermap.org/img/w/${icon}.png`;
            
-            document.getElementById('temperature').textContent = `Temperature: ${temperature - 273} °C `;
+            document.getElementById('temperature').textContent = `Temperature: ${temperature - 273.15} °C `;
             
             document.getElementById('description').textContent = `Description: ${description}`;
           })
