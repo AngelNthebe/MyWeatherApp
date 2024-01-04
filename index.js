@@ -50,9 +50,13 @@ function  weather(){
         const icon = data.weather[0].icon;
         const temperature = data.main.temp;
         const description = data.weather[0].description;
+        const mintemp= data.main.temp_min;
+            const maxtemp= data.main.temp_max;
+            const feel= data.main.feels_like;
         document.getElementById('icon').src = `http://openweathermap.org/img/w/${icon}.png`;
-       
         document.getElementById('temperature').textContent = `Temperature: ${temperature } °C `;
-        
+        document.getElementById('min-temp').textContent = `min Temperature: ${mintemp} °C `;
+        document.getElementById('max-temp').textContent = `max Temperature: ${maxtemp } °C `;
         document.getElementById('description').textContent = `Description: ${description}`;
+        document.getElementById('feel').textContent = ` feels like: ${feel} °C `;
       } 
