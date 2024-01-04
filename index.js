@@ -1,4 +1,4 @@
-
+// geting the  current weather  using the city name 
 function  weather(){
      const ApiKey ="c259c38445f4965cbfee848f82b935c8";
      const city = document.getElementById("city").value
@@ -22,17 +22,19 @@ function  weather(){
           })
           .catch(error => console.error('Error fetching weather data:', error));
       }
+    //   geolocation 
       document.getElementById("locationbtn").addEventListener('click', () => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
                 const { latitude, longitude } = position.coords;
+
                 getWeatherData(latitude, longitude);
             });
         } else {
             alert('Geolocation is not supported by your browser.');
         }
       });
-      
+      //getting the current weather using currentlocation geolocation
       async function getWeatherData(latitude, longitude) {
         const apiKey = 'c259c38445f4965cbfee848f82b935c8';
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;

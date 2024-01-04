@@ -26,13 +26,16 @@ body{
 .bg{
     background-image: url(/image/Screenshot_20231230_070833_Facebook.jpg);
     background-size: cover;
-   
+    background-position: center;
     
 }
 .main-container{
     
     margin: 0;
     height: 100vh;
+}
+.width100{
+    width: 100%;
 }
 .weather-container{
     width: 90%;
