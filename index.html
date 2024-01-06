@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weather app</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
+
 <body>
+    <!-- is the home page more like a pop up its were u search -->
     <div id="cover" class="coverContainer flex">
-       <div class="left flex center-center">
-<h1><i>ANGEL</i> <br> <strong>WEATHER</strong></h1>
-       </div>
-       <div class="right flex column-center gap">
-        <h1 class="hide"><i>ANGEL</i> <br> <strong>WEATHER</strong></h1>
-        <div class="flex item-center gap">
-            <input id="city" type="text" placeholder="Enter City Name" min="3">
-            <button class="bthSearch" id="searchBtn" onclick="getforecast()"><span class="material-symbols-outlined">
-                search
-                </span></button></div>
-        
-       </div> 
+        <div class="left flex center-center">
+            <h1><i>ANGEL</i> <br> <strong>WEATHER</strong></h1>
+        </div>
+        <div class="right flex column-center gap">
+            <h1 class="hide"><i>ANGEL</i> <br> <strong>WEATHER</strong></h1>
+            <div class="flex item-center gap">
+                <input id="city" type="text" placeholder="Enter City Name" min="3">
+                <button class="bthSearch" id="searchBtn" onclick="getforecast()"><span
+                        class="material-symbols-outlined">
+                        search
+                    </span></button>
+            </div>
+
+        </div>
     </div>
-    <div id="main" class="main-container flex">
-        <P onclick="openpg()"  class="out" id="backtosearch"><strong>X</strong></P>
-        <div class="main-left" >
+    <!-- shows weather -->
+    <div id="main" class="main-container hide ">
+        <P onclick="openpg()" class="out" id="backtosearch"><strong>X</strong></P>
+        <div class="main-left">
             <div id="currentWeaher" class="current-weather flex">
                 <div id="weather" class="width50 flex column-center">
                     <span class="material-symbols-outlined">
                         location_on
-                        </span><p id="cityname"><strong> </strong></p>
-                    <h1 ><strong id="currenttemp"></strong></h1>
+                    </span>
+                    <p id="cityname"><strong> </strong></p>
+                    <h1><strong id="currenttemp"></strong></h1>
                 </div>
                 <div id="icon" class="width50 flex center-center">
-                    <img id="currentIcon"  alt="">
+                    <img id="currentIcon" alt="">
                 </div>
             </div>
             <div id="moreInformation" class="information flex column-center gap">
-    
-                    <div class="fullwidth flex center-center gap">
-                        <div class="card flex center-center">
-                            <p> <small id="mintemp" ></small></p>
-                            
-                        </div>
+
+                <div class="fullwidth flex center-center gap">
                     <div class="card flex center-center">
-                        <p> <small id="maxtemp" ></small></p>
+                        <p> <small id="mintemp"></small></p>
+
+                    </div>
+                    <div class="card flex center-center">
+                        <p> <small id="maxtemp"></small></p>
                     </div>
                 </div>
                 <div class="fullwidth flex center-center gap">
                     <div class="card flex center-center">
                         <p> <small id="humidity"></small></p>
                     </div>
-                <div class="card flex center-center">
-                    <p> <small id="feel"></small></p>
+                    <div class="card flex center-center">
+                        <p> <small id="feel"></small></p>
+                    </div>
                 </div>
-            </div>
-            <div class="fullwidth flex center-center gap">
-                <div class="card flex center-center">
-                    <p> <small id="pressure"></small></p>
+                <div class="fullwidth flex center-center gap">
+                    <div class="card flex center-center">
+                        <p> <small id="pressure"></small></p>
+                    </div>
+                    <div class="card flex center-center">
+                        <p> <small id="wind"></small></p>
+                    </div>
                 </div>
-            <div class="card flex center-center">
-                <p> <small id="wind"></small></p>
-            </div>
-        </div>
-                         
+
             </div>
         </div>
         <div id="display" class="main-right flex column-center gap">
         </div>
     </div>
- <script src="./index.js"></script>   
+    <script src="./index.js"></script>
 </body>
+
 </html>
